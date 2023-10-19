@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.fij{
+  @apply flex items-center justify-between
+}
+.ten-cong-ty{
+  @apply text-7xl text-chiThao-600 bg-yellow-400 font-black
+}
+.btn{
+  @apply bg-blue-600 text-white px-4 rounded h-[40px]
+}
+.input{
+  @apply h-[40px] px-2 border-gray-400 border overflow-hidden rounded
+}
+.input-search{
+  border-right: none;
+  border-top-right-radius: unset!important;
+  border-bottom-right-radius: unset!important;
+  @apply input w-32 sm:w-auto
+}
+
+.menu{
+  @apply flex space-x-3
+}
+
+.menu li a{
+  @apply hover:text-blue-500
+}
+.bg-black-50{
+background: rgb(0 0 0 / 50%);
+}
+.owl-theme .item{
+  max-height: 400px;
+}
+[x-cloak] { display: none; }
+
+/* chitiet-sanpham */
+.chitiet-slider-item{
+  @apply focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center ring-2 ring-indigo-300 ring-inset border-4 overflow-hidden ring-0
+}
+
+/* PROGRESS */
+
+
+
+#steps {
+  width: 505px;
+  margin: 50px auto;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: inline-block;
+  border: 4px solid;
+  border-color: transparent;
+  border-radius: 50%;
+  color: #cdd0da;
+  font-weight: 600;
+  text-align: center;
+  line-height: 35px;
+}
+
+.step:first-child {
+  line-height: 40px;
+}
+
+.step:nth-child(n+2) {
+  margin: 0 0 0 100px;
+  transform: translate(0, -4px);
+}
+
+.step:nth-child(n+2):before {
+  width: 75px;
+  height: 3px;
+  display: block;
+  background-color: white;
+  transform: translate(-95px, 21px);
+  content: "";
+}
+
+.step:after {
+  width: 150px;
+  display: block;
+  transform: translate(-55px, 3px);
+  color: #818698;
+  content: attr(data-desc);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.step:first-child:after {
+  transform: translate(-55px, -1px);
+}
+
+.step.active {
+  border-color: #73b5e8;
+  color: #73b5e8;
+}
+
+.step.active:before {
+  background: linear-gradient(to right, #58bb58 0%, #73b5e8 100%);
+}
+
+.step.active:after {
+  color: #73b5e8;
+}
+
+.step.done {
+  background-color: #58bb58;
+  border-color: #58bb58;
+  color: white;
+}
+
+.step.done:before {
+  background-color: #58bb58;
+}
