@@ -1,4 +1,4 @@
-## Start tailwind
+## Setup tailwind
 
 ```
 npx tailwindcss -i ./css/tailwind/input.css -o ./css/tailwind/output.css --watch
